@@ -1,0 +1,39 @@
+.main-container{
+    margin-left: 10px;
+}
+.mlist{
+    color:rgb(76, 226, 6);
+     margin-left: 15px; 
+}
+.form-group{
+    width: 365px;
+}
+#button{
+    background-color:green;
+    color: white;
+    font-family: Verdana;
+    
+}
+.table{
+    width:450px;
+    
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.table-header{
+    background-color: gray;
+    
+}
+.alert{
+    width: 364px;
+}
+#show{
+    background-color:rgb(29, 86, 243);
+    color: white;
+    width: 364px;
+}
+#div2{
+    position: absolute;
+    top: 70px;
+    margin-left: 600px;
+}

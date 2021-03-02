@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main-container">
+    <div class="container mt-4 " id="cont1">
+        <h1 class="mlist mb-4"><span><i class="fa fa-film" aria-hidden="true"></i> </span>Movie List </h1>
+    <form id='form1'>
+        <div class="form-group ">
+            <label for="movie">Movie Name</label>
+            <input type="text" id="movie" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="director">Director</label>
+            <input type="text" id="director" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="ratings">Ratings</label>
+            <input type="text" id="ratings" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit" class="form-control mt-4" id='button'>
+        </div>
+    </form>
+            <button class="btn btn-primary " id="show">Show Details</button>
+   
+</div>
+</div>
+<div id="div2">
+    <input type="text" placeholder="Search movie... " id="search" class="form-control">
+<table class="table table-striped mt-4" id="main-table">
+    <thead class="table-header">
+        <tr>
+        <th>Movie</th>
+        <th>Director</th>
+        <th>Ratings</th>
+        <th></th>
+        </tr>
+    </thead>
+    <tbody id='table-id'></tbody>
+</table>
+</div>
+<script src='main.js'></script>
+</body>
+</html>
