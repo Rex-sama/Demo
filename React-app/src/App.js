@@ -3,25 +3,23 @@ import Bmi from "./Components/Bmi";
 import Tip from "./Components/Tip";
 
 function App() {
-  const [pop,setPop] = useState(false);
+  const [pop,setPop] = useState(false); //bmi
   const [pop1,setPop1] = useState(true);
-  const [pop2,setPop2] = useState(false);
+  const [pop2,setPop2] = useState(false); //tip
   const [pop3,setPop3] = useState(true);
 
   function Pop(e){
-    if(pop1===true && e ){
+    //For Bmi Calculator
+    if(pop1===true && e===2){
       setPop2(false);
       setPop(true);
       setPop1(false);
-    }
-    else{
+    }else {
       setPop(false);
-      setPop1(true);
-      
-    }
-  }
-  function Pop2(e){
-    if(pop3===true && e ){
+      setPop1(true); 
+    } 
+    // For Tip Calculator
+    if(pop3===true && e===1  ){
       setPop(false);
       setPop2(true);
       setPop3(false);
@@ -36,12 +34,12 @@ function App() {
 
     {/* Tip Calculator */}
     <br/>
-    <button onClick={(e)=>Pop2(e)} className="btn btn-success" style={{width:"160px",height:"50px",fontSize:"20px",backgroundColor:'rgb(255, 77, 77)',border:'none  '}}>Tip Calculator</button>
+    <button onClick={(e)=>Pop(1)} className="btn btn-success" style={{width:"160px",height:"50px",fontSize:"20px",backgroundColor:'rgb(255, 77, 77)',border:'none  '}}>Tip Calculator</button>
     {pop2?<Tip />:''}
 
     {/* BMI */}
     <br/><br/>
-        <button onClick={(e)=>Pop(e)} className="btn btn-success" style={{width:"160px",height:"50px",fontSize:"20px",position:'absolute'}}>BMI Calculator</button><br/> <br/>
+        <button onClick={(e)=>Pop(2)} className="btn btn-success" style={{width:"160px",height:"50px",fontSize:"20px",position:'absolute'}}>BMI Calculator</button><br/> <br/>
         {pop?<Bmi />:''}
 
     </div>
